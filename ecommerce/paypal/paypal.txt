@@ -1,0 +1,31 @@
+curl https://api-3t.sandbox.paypal.com/nvp \
+  -s \
+  --insecure \
+  -d USER=castillotorresvictormanuel3.h-facilitator_api1.gmail.com \
+  -d PWD=QGPFE56TDEH4KRHG \
+  -d SIGNATURE=AFcWxV21C7fd0v3bYYYRCpSSRl31Arv90V.gEYvp3YSGFIH0vXa5AF.y \
+  -d METHOD=SetExpressCheckout \
+  -d VERSION=124 \
+  -d PAYMENTREQUEST_0_AMT=10 \
+  -d PAYMENTREQUEST_0_CURRENCYCODE=MXN \
+  -d PAYMENTREQUEST_0_PAYMENTACTION=SALE \
+  -d cancelUrl=http://www.example.com/cancel.html \
+  -d returnUrl=http://www.example.com/success.html
+
+
+https://developer.paypal.com/docs/classic/lifecycle/apps101/
+https://developer.paypal.com/docs/classic/express-checkout/ht_ec-singleItemPayment-curl-etc/
+https://developer.paypal.com/docs/classic/api/merchant/GetExpressCheckoutDetails_API_Operation_NVP/
+https://developer.paypal.com/docs/classic/api/NVPAPIOverview/
+https://developer.paypal.com/docs/classic/lifecycle/sb_calls/
+https://www.paypal-apps.com/user/my-account/applications/manage#most_recent
+https://developer.paypal.com/docs/classic/lifecycle/sb_credentials/
+https://developer.paypal.com/docs/classic/api/apiCredentials/
+https://developer.paypal.com/docs/classic/api/NVPAPIOverview/
+https://developer.paypal.com/docs/classic/api/
+https://developer.paypal.com/docs/classic/express-checkout/integration-guide/ECGettingStarted/#idde509e1a-af2a-412a-b9ab-829b844986c5
+http://themeforest.net/item/learning-education-courses-moodle-theme/full_screen_preview/14968876
+http://themeforest.net/item/vertex-responsive-moodle-theme/full_screen_preview/15404158
+http://themeforest.net/item/shiksha-responsive-moodle-theme/full_screen_preview/14190489
+http://themeforest.net/item/ausart-education-courses-moodle-theme/full_screen_preview/14667546
+http://themeforest.net/category/cms-themes/moodle

@@ -1,0 +1,50 @@
+from moodle.client30 import MoodleAPI
+from moodle.categorias import Categorias 
+from moodle.cursos import Cursos
+from moodle.grupos import Grupos
+from moodle.usuarios import Alumnos
+
+
+moodleinstance = MoodleAPI("3edb33e490b377f289e76091c3709816", "http://localhost/moodle/webservice/rest/server.php")
+categorias = Categorias(moodleinstance)
+cursos = Cursos(moodleinstance)
+alumnos = Alumnos(moodleinstance)
+grupos = Grupos(moodleinstance)
+
+#categoria_nueva = categorias.crear_categoria(name="Desde Afuera", description="Categoria hecha por la API") #[{u'id': 4, u'name': u'Desde Afuera'}]
+#actualizar_categoria = categorias.actualizar_categoria(id=4, name="Modificada desde la API") returns None
+#nuevo_curso = cursos.crear_curso(fullname="Curso de API3", shortname="cursoapi3", categoryid=4, format="weeks", groupmode=1, groupmodeforce=1, numsections=5) #[{u'id': 4, u'shortname': u'cursoapi'}]
+#actualizar_grupo = cursos.actualizar_curso(id=9, groupmode=1, groupmodeforce=1)  {u'warnings': []}
+#nuevo_grupo = grupos.crear_grupo(courseid=9, name="C9G1", description="Grupo creado por la API") #[{u'courseid': 9,u'description': u'Grupo creado por la API',u'descriptionformat': 1,u'enrolmentkey': u'',u'id': 3,u'idnumber': u'',u'name': u'C9G1'}]
+#nuevo_usuario = alumnos.crear_usuario(username="angel", password="Kaliman14.", firstname="Angel", lastname="Angel", email="angel.orea@prospectomedia.com", idnumber="123") #[{u'id': 6, u'username': u'angel'}]
+#usuario_id = alumnos.obtener_usuario_id(6)
+#usuario_email = alumnos.obtener_usuario_email("angel.orea@prospectomedia.com")
+#usuario_idnumber = alumnos.obtener_usuario_matricula("123")
+#[{u'department': u'',
+#  u'email': u'angel.orea@prospectomedia.com',
+#  u'firstaccess': 1460741056,
+#  u'firstname': u'Angel',
+#  u'fullname': u'Angel Angel',
+#  u'id': 6,
+#  u'idnumber': u'123',
+#  u'lastaccess': 1460741056,
+#  u'lastname': u'Angel',
+#  u'profileimageurl': u'http://localhost/moodle/theme/image.php/clean/core/1460404629/u/f1',
+#  u'profileimageurlsmall': u'http://localhost/moodle/theme/image.php/clean/core/1460404629/u/f2',
+#  u'username': u'angel'}]
+
+#suspender_usuario = alumnos.suspender_usuario(6)
+#activar_usuario = alumnos.activar_usuario(6)
+#enrolar_usuario_curso = alumnos.matricular_usuario_curso(6, 9)
+#desenrolar_usuario_curso = alumnos.desmatricular_usuario_curso(6,9)
+#suspender_usuario_curso = alumnos.suspender_usuario_curso(6, 9)
+#activar_usuario_curso = alumnos.activar_usuario_curso(6, 9)
+#nuevo_grupo = grupos.crear_grupo(courseid=6, name="COAPI2016", description="Nuevo grupo,wii") 
+#[{u'courseid': 6,
+#u'description': u'Nuevo grupo,wii',
+#u'descriptionformat': 1,
+#u'enrolmentkey': u'',
+#u'id': 4,
+#u'idnumber': u'',
+#u'name': u'COAPI2016'}]
+#agregar_alumno_grupo = grupos.agregar_persona_grupo(groupid=9, userid=6)

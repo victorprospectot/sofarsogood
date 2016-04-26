@@ -1,0 +1,159 @@
+[
+ {
+    "model": "ecommerce.CatTipoEntorno",
+    "pk": 1,
+    "fields": {
+      "nombre": "sandbox"
+    }
+  },
+  {
+    "model": "ecommerce.CatTipoEntorno",
+    "pk": 2,
+    "fields": {
+      "nombre": "live"
+    }
+  },
+  {
+    "model": "ecommerce.CatOperacionesAPIPaypal",
+    "pk": 1,
+    "fields": {
+      "metodo": "SetExpressCheckout"
+    }
+  },
+  {
+    "model": "ecommerce.CatOperacionesAPIPaypal",
+    "pk": 2,
+    "fields": {
+      "metodo": "DoExpressCheckoutPayment"
+    }
+  },
+  {
+    "model": "ecommerce.CatOperacionesAPIPaypal",
+    "pk": 3,
+    "fields": {
+      "metodo": "Subscribe"
+    }
+  },
+
+  {
+    "model": "ecommerce.CatAPIPaypal",
+    "pk": 1,
+    "fields": {
+      "url": "https://api-3t.sandbox.paypal.com/nvp",
+      "url_paypal": "https://www.sandbox.paypal.com/webscr",
+      "version": "124",
+      "cat_tipoentorno": "1"
+    }
+  },
+  {
+    "model": "ecommerce.CatAPIPaypal",
+    "pk": 2,
+    "fields": {
+      "url": "https://api-3t.paypal.com/nvp",
+      "url_paypal": "https://www.paypal.com",
+      "version": "124",
+      "cat_tipoentorno": "2"
+    }
+  },
+  {
+    "model": "ecommerce.EstadosPayPal",
+    "pk": 1,
+    "fields": {
+      "estado": "Transaccion PayPal pendiente"
+    }
+  },
+  {
+    "model": "ecommerce.EstadosPayPal",
+    "pk": 2,
+    "fields": {
+      "estado": "Transaccion PayPal procesada"
+    }
+  },
+  {
+    "model": "ecommerce.EstadosPayPal",
+    "pk": 3,
+    "fields": {
+      "estado": "IPN recibida"
+    }
+  },
+  {
+    "model": "ecommerce.EstadosPayPal",
+    "pk": 4,
+    "fields": {
+      "estado": "IPN verificada"
+    }
+  },
+  {
+    "model": "ecommerce.EstadosPayPal",
+    "pk": 5,
+    "fields": {
+      "estado": "IPN invalido"
+    }
+  },
+  {
+    "model": "ecommerce.EstadosPayPal",
+    "pk": 6,
+    "fields": {
+      "estado": "Transaccion PayPal fallida"
+    }
+  },
+  {
+		"model": "ecommerce.OpcionesAPIPaypalOperaciones",
+		"pk": null,
+		"fields": {
+			"catapipaypal": 1,
+			"catoperacionesapipaypal": 1,
+			"request_field": "CARTBORDERCOLOR",
+			"value": "7ab800",
+			"habilitado": true
+		}
+	},
+	{
+		"model": "ecommerce.OpcionesAPIPaypalOperaciones",
+		"pk": null,
+		"fields": {
+			"catapipaypal": 2,
+			"catoperacionesapipaypal": 1,
+			"request_field": "CARTBORDERCOLOR",
+			"value": "7ab800",
+			"habilitado": true
+		}
+	},
+	{
+		"model": "ecommerce.OpcionesAPIPaypalOperaciones",
+		"pk": null,
+		"fields": {
+			"catapipaypal": 1,
+			"catoperacionesapipaypal": 3,
+			"request_field": "image_url",
+			"value": "header_mail.jpg",
+			"habilitado": true
+		}
+	},
+	{
+		"model": "ecommerce.OpcionesAPIPaypalOperaciones",
+		"pk": null,
+		"fields": {
+			"catapipaypal": 2,
+			"catoperacionesapipaypal": 3,
+			"request_field": "image_url",
+			"value": "header_mail.jpg",
+			"habilitado": true
+		}
+	},
+
+	{
+		"model": "ecommerce.CuentaPaypal",
+		"pk": 1,
+		"fields": {
+			"nombre": "PayPal sandbox",
+			"apiusername": "castillotorresvictormanuel3.h_api1.gmail.com",
+			"_apipassword": "",
+			"_apisignature": "",
+			"cat_apipaypal": 1,
+			"habilitado": 1,
+			"cat_tipoentorno": 1,
+			"receiver_email": "castillotorresvictormanuel3.h-facilitator@gmail.com"
+		}
+	}
+]
